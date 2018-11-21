@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuMakanan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambarnasi"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/nasi"
+                android:onClick="hitungnasi"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Nasi Putih"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Rp.3000"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambarayam"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/chickenfillet"
+                android:onClick="hitunglauk"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Ayam Fillet"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Rp.12.500"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorhijau"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambaresteh"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                android:src="@mipmap/esteh"
+                android:onClick="hitungesteh"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="ES Teh"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Rp.2.500"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambarsayur"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/cakangkung"
+                android:onClick="hitungsayur"
+
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Sayur"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Rp.8000"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilihan Menu"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NASI              :" />
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/counternasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0" />
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/counterharganasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAUK             :"
+            />
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/counterlauk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0" />
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/counterhargalauk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CA KKG         :" />
+        <View
+            android:layout_width="14dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/countersayur"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0" />
+        <View
+            android:layout_width="14dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/counterhargasayur"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MINUMAN    :"
+            />
+            <View
+                android:layout_width="14dp"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/counteresteh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0" />
+            <View
+                android:layout_width="14dp"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/counterhargaesteh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL PESANAN    :"
+            />
+        <View
+            android:layout_width="14dp"
+            android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/grantotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
